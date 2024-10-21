@@ -3,7 +3,7 @@ body
     /* background-color: #ccffff; */
     background-color:#d9fcfc; 
 }
-@media screen and (max-width: 550px) 
+@media screen and (max-width: 410px) 
 {
 
 .card
@@ -50,6 +50,10 @@ body
     flex-direction: row;
     align-items: center;
 }
+.dashed-line 
+{
+    width: 320px;
+}
 .round-img
 {
     height: 20px;
@@ -57,7 +61,7 @@ body
 }
 .img1
 {
-    margin-left: -7px;
+    margin-left: 0px;
 }
 
 
