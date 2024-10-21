@@ -1,0 +1,25 @@
+body
+{
+    /* background-color: #ccffff; */
+    background-color:#d9fcfc; 
+}
+@media screen and (max-width: 550px) 
+{
+
+.card
+{
+   border: 2px solid black;
+}
+.card-heading
+{
+
+}
+.pass-type-container
+{
+    display: flex;
+}
+.sub-text
+{
+    margin-top: -20px;
+}
+}
