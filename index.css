@@ -102,4 +102,15 @@ body
  padding: 8px 15px ;
 }
 
+.Booking-type-container
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.Booking-type-container .sub-text
+{
+    font-size: 12px;
+}
 }

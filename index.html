@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pmpml ticket</title>
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <div class="card">
-   <div class="heading-container">
-    <h2 class="card-heading">पुणे महानगर परिवहन महामंडळ लि.</h2>
-  </div>
-    <div class="pass-type-container">
-      <div class="pt-div">
-        <h5>Pass Type</h5>
-        <h3 class="sub-text">PMC and PCMC</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pmpml ticket</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="heading-container">
+        <h2 class="card-heading">पुणे महानगर परिवहन महामंडळ लि.</h2>
       </div>
-      <div>
-      <h5>ID</h5>
-      <h3 class="sub-text">8987</h3>
+      <div class="pass-type-container">
+        <div class="pt-div">
+          <h5>Pass Type</h5>
+          <h3 class="sub-text">PMC and PCMC</h3>
+        </div>
+        <div>
+          <h5>ID</h5>
+          <h3 class="sub-text">8987</h3>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>
+          <h5>Fare</h5>
+          <h3 class="sub-text">₹50</h3>
+        </div>
       </div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-      <div>
-        <h5>Fare</h5>
-        <h3 class="sub-text">₹50</h3>
+
+      <div class="dashed-line-container">
+        <div class="first-line-round" style="margin-left: -5px">
+          <img class="round-img img1" src="./image/half-circle.png" alt=".." />
+        </div>
+        <div>
+          <p class="dashed-line">
+            -&nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;-
+            &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;-
+            &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;-
+          </p>
+        </div>
+        <div class="first-line-round">
+          <img
+            class="round-img img1"
+            src="./image/half-circle-right.png"
+            alt=".."
+          />
+        </div>
       </div>
-      
-    
-    </div>
 
-    <div class="dashed-line-container">
-    <div class="first-line-round" style="margin-left: -5px;">  
-      <img class="round-img img1" src="./image/half-circle.png" alt="..">
-    </div>
-    <div> 
-      <p class="dashed-line" >-&nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;- &nbsp;-  </p>
-    </div>
-    <div class="first-line-round">  
-      <img class="round-img img1" src="./image/half-circle-right.png" alt="..">
-    </div>
+      <div class="Booking-type-container">
+        <div class="bt-div">
+          <h5>Booking Time</h5>
+          <h4 class="sub-text">
+            <span id="currentDate"></span> <span>|10.05AM</span>
+          </h4>
 
+          <script>
+            function updateDate() {
+              const currentDate = new Date();
+              const day = currentDate.getDate();
+              const monthNames = [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ];
+              const month = monthNames[currentDate.getMonth()];
+              const year = currentDate.getFullYear();
+              const formattedDate = `${day}-${month}-${year}`;
+              document.getElementById("currentDate").textContent =
+                formattedDate;
+            }
 
+            updateDate();
+          </script>
+        </div>
 
+        
+        <div class="bt-div">
+          <h5>Validity Time</h5>
 
+          <h4 class="sub-text">
+            <span id="nextDate"></span> <span>|11.59PM</span>
+          </h4>
 
-    
+          <script>
+            function updateNextDate() {
+              const currentDate = new Date();
+              currentDate.setDate(currentDate.getDate() + 1);
+              const day = currentDate.getDate();
+              const monthNames = [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ];
+              const month = monthNames[currentDate.getMonth()];
+              const year = currentDate.getFullYear();
+              const formattedDate = `${day}-${month}-${year}`;
+              document.getElementById("nextDate").textContent = formattedDate;
+            }
+
+            updateNextDate();
+          </script>
+        </div>
+      </div>
+
+      <div class="card-logo">
+        <img
+          src="./image/pmpml-logo.png"
+          alt="Image not found"
+          class="card-img"
+        />
+      </div>
+      <div class="container-bottom-heading">
+        <h2 class="card-bottom">One Day Pass</h2>
+      </div>
     </div>
-    <div></div>
-    <div class="card-logo">
-      <img src="./image/pmpml-logo.png" alt="Image not found" class="card-img">
-    </div>
-    <div class="container-bottom-heading">
-      <h2 class="card-bottom">One Day Pass</h2>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
