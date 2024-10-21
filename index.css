@@ -8,15 +8,34 @@ body
 
 .card
 {
-   border: 2px solid black;
+   border: 2px solid white;
+   width: 90%;
+   margin: 0px auto;
+}
+.heading-container
+{
+    margin-top: -20px;
+    background-color: #ff8533;
+    color: white;
+
+
 }
 .card-heading
 {
-
+ text-align: center;
+ font-size: 22px;
+ padding: 8px;
 }
 .pass-type-container
 {
     display: flex;
+    margin: 0px auto;
+    margin-top: -20px;
+    justify-content: center;
+}
+.pt-div
+{
+   
 }
 .sub-text
 {
