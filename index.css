@@ -23,8 +23,8 @@ body
 .card-heading
 {
  text-align: center;
- font-size: 22px;
- padding: 8px;
+ font-size: 20px;
+ padding: 8px 15px ;
 }
 .pass-type-container
 {
@@ -32,13 +32,70 @@ body
     margin: 0px auto;
     margin-top: -20px;
     justify-content: center;
+
+
+    
 }
 .pt-div
 {
-   
+   margin-left: -20px;
 }
 .sub-text
 {
     margin-top: -20px;
 }
+.dashed-line-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.round-img
+{
+    height: 20px;
+    width: 20px;
+}
+.img1
+{
+    margin-left: -7px;
+}
+
+
+.card-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+        transform: scale(1); /* Zoom out to normal size */
+    }
+}
+.card-img
+{
+    animation: zoomInOut 2s infinite ease-in-out;
+    height: 120px;
+    width: 120px;
+}
+.container-bottom-heading
+{
+    margin-bottom: -17px;
+    background-color: #ff8533;
+    color: white;
+}
+.card-bottom
+{
+   
+ text-align: center;
+ font-size: 20px;
+ padding: 8px 15px ;
+}
+
 }
